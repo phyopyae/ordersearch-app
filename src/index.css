@@ -11,3 +11,279 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  text-align: justify;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 22pt;
+}
+
+.title.b {
+  position: absolute;
+  bottom: 10px;
+}
+
+.search-results {
+  margin-left: 20px;
+  width: 300px;
+}
+
+.table {
+  overflow-x: auto;
+}
+
+.table-orders {
+  width: 100%;
+}
+
+tr {
+  cursor: pointer;
+}
+
+.label-header {
+  margin: 10px;
+}
+
+select {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.arrow {
+  border: none;
+  background: none;
+}
+
+.account-col {
+  color: #0d6efd !important;
+}
+
+.period {
+  text-align: justify;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+button {
+  margin: 20px;
+} 
+
+.name {
+  display:inline-block; 
+  color: #0d6efd;
+}
+
+.detail {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  cursor: default;
+}
+
+.detail-header {
+  padding-bottom: 10px;
+}
+
+.detail-header-button {
+  display: inline;
+}
+
+.detail-body {
+  border-top: 1px solid rgb(217, 217, 217);
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.table-detail-body {
+  width: 100%;
+}
+
+.detail-footer {
+  background-color: lightgrey;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+input[type="date"] {
+  padding: 8px;
+  margin-left: 5px;
+}
+
+.search-btn button {
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search-label {
+  margin-bottom: 5px;
+}
+
+.review-detail-btn {
+  width: 250px;
+  height: 40px;
+  border-radius: 45px;
+  border: 1px solid black;
+  background-color: white;
+  color: #0d6efd;
+  margin-left: 20px;
+}
+
+.accept-detail-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 45px;
+  background-color: #0d6efd;
+  color: white;
+  border: 0px;
+  margin-left: 20px;
+  float: right;
+}
+
+.reject-detail-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 45px;
+  background-color: white;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  margin-left: 20px;
+  float: right;
+}
+
+.loading {
+  position: absolute;
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .search-section {
+    align-items: center !important;
+    width: 100%;
+  }
+
+  .search-results {
+    text-align: center;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .label-header {
+    width: 20%;
+    text-align: end;
+  }
+
+  .nav-item .dropdown {
+    width: 190px;
+    text-align: center;
+  }
+
+  .nav-item .dropdown select {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  .search-btn button {
+    margin-left: 40%;
+  }
+
+  .detail-header {
+    text-align: center;
+    display: block;
+  }
+
+  .detail-body {
+    padding: 10px 0px !important;
+  }
+
+  .detail-header-button {
+    display: grid !important;
+    align-items: baseline;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .review-detail-btn {
+    margin: 10px;
+  }
+  .accept-detail-btn,
+  .reject-detail-btn {
+    width: 250px !important;
+    float: none !important;
+    margin: 10px;
+  }
+
+  .detail-body {
+    padding: 10px 20px;
+  }
+  
+  .table-orders tr.orderRow th,
+  .table-orders tr.orderRow td {
+    display: none;
+  }
+
+  .table-orders tr.orderRow th:nth-child(1),
+  .table-orders tr.orderRow td:nth-child(1) {
+    display: table-cell;
+  }
+
+  .table-orders tr.orderRow th:nth-child(2),
+  .table-orders tr.orderRow td:nth-child(2) {
+    display: table-cell;
+  }
+
+  .table-orders tr.orderRow th:nth-child(3),
+  .table-orders tr.orderRow td:nth-child(3) {
+    display: table-cell;
+  }
+
+  .table-orders tr.orderRow th:nth-child(4),
+  .table-orders tr.orderRow td:nth-child(4) {
+    display: table-cell;
+  }
+
+  .table-orders tr.orderRow th:nth-child(9),
+  .table-orders tr.orderRow td:nth-child(9) {
+    display: table-cell;
+  }
+
+  .table-orders tr.detailRow .table-detail-body td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

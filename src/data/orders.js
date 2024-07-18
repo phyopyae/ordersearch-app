@@ -1,0 +1,7 @@
+export const orders = [
+    { id: 1, account: "10000000", operation: "Buy", symbol: "NA", description: "NATIONAL BANK OF CDA", quantity: 11, filledQuantity: 1, price: 135, status: "Waiting", date: "2022/12/22 03:02:14", expireDate: "2022/12/22 03:02:14", refNo: "95749207", redExt: "2-XXXXXXX1-1"},
+    { id: 2, account: "00000001", operation: "Buy", symbol: "NA", description: "NATIONAL BANK OF CDA", quantity: 10, filledQuantity: 0, price: 200, status: "Waiting", date: "2024/01/01 12:30:00", expireDate: "2024/01/01 12:30:00", refNo: "12345678", redExt: "2-XXXXXXX1-2"},
+    { id: 3, account: "00000002", operation: "Buy", symbol: "NA", description: "NATIONAL BANK OF CDA", quantity: 5, filledQuantity: 0, price: 526, status: "Waiting", date: "2024/06/07 23:02:54", expireDate: "2024/06/07 23:02:54", refNo: "20435409", redExt: "2-XXXXXXX1-3"},
+    { id: 4, account: "00000003", operation: "Buy", symbol: "NA", description: "NATIONAL BANK OF CDA", quantity: 90, filledQuantity: 0, price: 744, status: "Waiting", date: "2024/02/03 03:02:24", expireDate: "2024/02/03 03:02:24", refNo: "13830581", redExt: "2-XXXXXXX1-4"},
+    { id: 5, account: "00000004", operation: "Buy", symbol: "NA", description: "NATIONAL BANK OF CDA", quantity: 800, filledQuantity: 0, price: 369, status: "Waiting", date: "2024/04/030 05:50:43", expireDate: "2024/04/030 05:50:43", refNo: "09612755", redExt: "2-XXXXXXX1-5"}
+];
