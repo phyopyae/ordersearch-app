@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-//import { orders } from "../data/orders";
-//import { details } from "../data/details";
 import DatePicker from "react-datepicker";
 import OrderDetail from "./OrderDetail";
 import { fetchOrders } from "../api/fetchOrders";
@@ -128,7 +126,7 @@ const OrderView = () => {
                 <div className="nav-item">
                     <span className="label-header">Period</span>
                     <div className="dropdown">
-                        <select id="periodDropdown" value={periodOpts} onChange={changePeriod}>
+                        <select id="periodDropdown" value={period} onChange={changePeriod}>
                             {periodOpts.map((period) => (
                                 <option key={period.value} value={period.value}>
                                     {period.label}
@@ -140,7 +138,7 @@ const OrderView = () => {
                 <div className="nav-item">
                     <span className="label-header">Status</span>
                     <div className="dropdown">
-                        <select id="statusDropdown" value={statusOpts} onChange={changeStatus}>
+                        <select id="statusDropdown" value={status} onChange={changeStatus}>
                             {statusOpts.map((status) => (
                                 <option key={status.value} value={status.value}>
                                     {status.label}

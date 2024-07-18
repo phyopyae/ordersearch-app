@@ -7,11 +7,11 @@ const OrderDetail = (selectedDetail) => {
 
     const warnMsgs = [
         { id: 1, msg: "To trade this security in this account, a currency conversion will be made at the current rate." },
-        { id: 1, msg: "A similar order has already been submitted." },
-        { id: 1, msg: "Your transaction will be processed the following business day." },
-        { id: 1, msg: "It is not possible to calculate the buying power of this order." },
-        { id: 1, msg: "A cancellation will not be possible during business hours on market orders. You can call a representative for more information." },
-        { id: 1, msg: "For the above-mentioned reason(s), your order will be processed by one of our representatives." }
+        { id: 2, msg: "A similar order has already been submitted." },
+        { id: 3, msg: "Your transaction will be processed the following business day." },
+        { id: 4, msg: "It is not possible to calculate the buying power of this order." },
+        { id: 5, msg: "A cancellation will not be possible during business hours on market orders. You can call a representative for more information." },
+        { id: 6, msg: "For the above-mentioned reason(s), your order will be processed by one of our representatives." }
     ]
 
     const formatPrice = (price) => {
@@ -32,24 +32,26 @@ const OrderDetail = (selectedDetail) => {
 
                 <div className="detail-body">
                     <table className="table-detail-body">
-                        <tr>
-                            <td>Net Amount : {detail.netAmount} {detail.currency}</td>
-                            <td colSpan={2}></td>
-                            <td>Price : {formatPrice(order.price)}</td>
-                            <td colSpan={2}></td>
-                            <td>Exchange Rate : {detail.exchangeRate}</td>
-                            <td colSpan={2}></td>
-                            <td>O/S Limit : {detail.osLimit}</td>
-                        </tr>
-                        <tr>
-                            <td>Reference Number : {order.refNo}</td>
-                            <td colSpan={2}></td>
-                            <td>Date / Time : {order.date}</td>
-                            <td colSpan={2}></td>
-                            <td>Telephone : {detail.phoneNumber}</td>
-                            <td colSpan={2}></td>
-                            <td>User ID : {detail.userId}</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Net Amount : {detail.netAmount} {detail.currency}</td>
+                                <td colSpan={2}></td>
+                                <td>Price : {formatPrice(order.price)}</td>
+                                <td colSpan={2}></td>
+                                <td>Exchange Rate : {detail.exchangeRate}</td>
+                                <td colSpan={2}></td>
+                                <td>O/S Limit : {detail.osLimit}</td>
+                            </tr>
+                            <tr>
+                                <td>Reference Number : {order.refNo}</td>
+                                <td colSpan={2}></td>
+                                <td>Date / Time : {order.date}</td>
+                                <td colSpan={2}></td>
+                                <td>Telephone : {detail.phoneNumber}</td>
+                                <td colSpan={2}></td>
+                                <td>User ID : {detail.userId}</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div className="detail-footer">
